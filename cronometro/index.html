@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        background-color:whitesmoke;
+    }
+
+    .max-width {
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10%;
+        background-color:grey;
+        box-shadow: 0 0 5px black;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-family: 'Segoe UI';
+        font-size: 1.1em;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+    button:hover {
+        background-color: #a1c0d1;
+    }
+
+    button:active {
+        background-color: #111;
+    }
+
+    .bg-green {
+        background-color: green;
+    }
+
+    .bg-black {
+        background-color: red;
+    }
+
+    .bg-red {
+        background-color: pink;
+    }
+</style>
+
+<body>
+
+    <div class="max-width">
+        <button onclick = "start(); "class="bg-green">Iniciar</button>
+        <button onclick = "pause(); "class="bg-black">Pausar</button>
+        <button onclick = "stop(); "class="bg-red">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+    <script src="cron.js"></script>
+</body>
+</html>
